@@ -30,5 +30,3 @@
 
 # sqlparser specific
 sqlparser
-*.c
-*.h

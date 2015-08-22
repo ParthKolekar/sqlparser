@@ -1,8 +1,8 @@
 OBJ = sqlparser
-override CFLAGS += -O3 -flto -funroll-loops -Wall -std=c++11
+override CFLAGS += -O3 -flto -funroll-loops -Wall 
 PREFIX ?= /usr/local
 BINDIR = $(PREFIX)/bin
-CXX = g++
+CXX ?= g++
 LEX = flex 
 YACC = bison -d
 
