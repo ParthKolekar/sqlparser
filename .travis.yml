@@ -1,0 +1,12 @@
+language: cpp
+
+compiler: 
+    - g++
+    - clang
+
+script:
+    - make 
+
+notifications:
+    email:
+        - parth.kolekar@students.iiit.ac.in
