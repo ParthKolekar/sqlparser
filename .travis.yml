@@ -2,12 +2,11 @@ language: cpp
 
 compiler: 
     - g++
-    - clang
 
 before_install:
-    - apt-get update -qq
-    - apt-get upgrade -y
-    - apt-get install bison flex
+    - sudo apt-get update -qq
+    - sudo apt-get upgrade -y
+    - sudo apt-get install bison flex
 
 script:
     - make 
