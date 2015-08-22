@@ -3,10 +3,13 @@ language: cpp
 compiler: 
     - g++
 
-before_install:
-    - sudo apt-get update -qq
-    - sudo apt-get upgrade -y
-    - sudo apt-get install bison flex
+addons:
+    apt:
+        packages:
+            - bison
+            - flex
+
+sudo: false
 
 script:
     - make 
