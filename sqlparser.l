@@ -24,7 +24,7 @@ FROM    {
     return END;
 }
 
-[a-z]+ {
+[a-zA-Z]+ {
     yylval.sval = strdup(yytext);
     return STRING;
 }
