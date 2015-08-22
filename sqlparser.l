@@ -20,6 +20,10 @@ FROM    {
     ++line_num;
 }
 
+; {
+    return END;
+}
+
 [a-z]+ {
     yylval.sval = strdup(yytext);
     return STRING;

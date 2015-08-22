@@ -16,11 +16,12 @@
 
 %token SELECT
 %token FROM
+%token END
 %token <sval> STRING
 
 %%
 
-sqlparser: SELECT STRING FROM STRING
+sqlparser: SELECT STRING FROM STRING END
          {
             std::cout << "Selecting Column " << $2 << " from Table " << $4 << std::endl;
          }
